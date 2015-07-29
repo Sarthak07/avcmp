@@ -1,0 +1,123 @@
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="0dp" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TableLayout
+                android:id="@+id/TableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <TableRow android:id="@+id/trinputfile"
+                    style="@style/tablerow">
+                    <TextView
+                        android:id="@+id/tvlableinputfile"
+                        android:text="Input File"
+                        style="@style/lable"/>
+                    <Button
+                        android:id="@+id/btninputfile"
+                        android:text="Browser"
+                        style="@style/item"/>
+                </TableRow>
+                <TableRow android:id="@+id/troutputfolder"
+                    style="@style/tablerow">
+                    <TextView
+                        android:id="@+id/tvlableoutputfolder"
+                        android:text="Output Folder"
+                        style="@style/lable"/>
+                    <TextView
+                        android:id="@+id/tvoutputfolder"
+                        style="@style/item"/>
+                </TableRow>
+                <TableRow android:id="@+id/troutputname"
+                    style="@style/tablerow">
+                    <TextView
+                        android:id="@+id/tvlableoutputname"
+                        android:text="Output Name"
+                        style="@style/lable"/>
+                    <EditText
+                        android:id="@+id/etoutputname"
+                        style="@style/item"
+                        android:digits="0123456789qwertzuiopasdfghjklyxcvbnm_"/>
+                </TableRow>
+                <TableRow android:id="@+id/trlimitedsize"
+                    style="@style/tablerow">
+                    <TextView
+                        android:id="@+id/tvlablelimitedsize"
+                        android:text="Compressed File Size"
+                        style="@style/lable"/>
+
+                    <EditText
+                        android:id="@+id/etlimitedsize"
+                        style="@style/item"
+                        android:inputType="number" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/trconvert"
+                    style="@style/tablerow">
+                    <Button
+                        android:id="@+id/btnconvert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:text="mp4-ac3"
+                        style="@style/lable"/>
+                </TableRow>
+                <TableRow android:id="@+id/trconvertt"
+                    style="@style/tablerow">
+                    <Button
+                        android:id="@+id/btnconvertt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:text="mp4-ac3"
+                        style="@style/lable"/>
+                </TableRow>
+
+                <TableRow android:id="@+id/trthumbnail"
+                    style="@style/tablerow">
+                    <ImageView
+                        android:id="@+id/thumbnail"
+                        style="@style/lable"
+                        android:layout_span="2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter" />
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>
