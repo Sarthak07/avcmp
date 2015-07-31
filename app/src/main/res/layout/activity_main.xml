@@ -89,7 +89,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_span="2"
-                        android:text="mp4-ac3"
+                        android:text="mpeg4-flac"
                         style="@style/lable"/>
                 </TableRow>
 
