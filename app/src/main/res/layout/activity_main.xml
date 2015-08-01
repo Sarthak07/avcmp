@@ -79,7 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_span="2"
-                        android:text="mp4-ac3"
+                        android:text="x264-ac3"
                         style="@style/lable"/>
                 </TableRow>
                 <TableRow android:id="@+id/trconvertt"
